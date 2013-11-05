@@ -1,11 +1,11 @@
 all: main.o
-	gcc -o Test1 main.o
+	g++ -o Test1 main.o
 
 Test1: main.o
-	gcc -o Test1 main.o
+	g++ -o Test1 main.o
 
 main.o: main.c
-	gcc -c main.c
+	g++ -c main.cpp
 
 .PHONY: clean
 clean:
